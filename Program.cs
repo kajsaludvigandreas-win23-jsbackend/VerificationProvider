@@ -15,6 +15,7 @@ var host = new HostBuilder()
         services.AddDbContext<DataContext>(x => x.UseSqlServer(Environment.GetEnvironmentVariable("VerificationRequestDatabase")));
         services.AddScoped<IVerificationCleanerService, VerificationCleanerService>();
         services.AddScoped<IVerificationService, VerificationService>();
+        services.AddScoped<IValidateVerificationCodeService, ValidateVerificationCodeService>();
     })
     .Build();
 
