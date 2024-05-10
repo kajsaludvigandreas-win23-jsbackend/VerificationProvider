@@ -1,0 +1,9 @@
+{
+    "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet-isolated",
+    "ServiceBusConnection": "Endpoint=sb://siliconservicebus.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=fDe1UrUGMYN+1C/isNoqM+QYTS0nzkbeK+ASbDxsCSE=",
+    "VerificationRequestDatabase": "Server=tcp:backendjs.database.windows.net,1433;Initial Catalog=JsBackendDB;Persist Security Info=False;User ID=SQLAdmin;Password=Bytmig123!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
+  }
+}
