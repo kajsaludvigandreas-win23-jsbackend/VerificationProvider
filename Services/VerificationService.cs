@@ -41,7 +41,7 @@ public class VerificationService(ILogger<VerificationService> logger, IServicePr
             if (existingRequest != null)
             {
                 existingRequest.Code = code;
-                existingRequest.ExpiryDate = DateTime.Now.AddMinutes(5);
+                existingRequest.ExpiryDate = DateTime.Now.AddMinutes(30);
                 context.Entry(existingRequest).State = EntityState.Modified;
             }
             else
@@ -50,7 +50,7 @@ public class VerificationService(ILogger<VerificationService> logger, IServicePr
                 {
                     Email = verificationRequest.Email,
                     Code = code,
-                    ExpiryDate = DateTime.Now.AddMinutes(5)
+                    ExpiryDate = DateTime.Now.AddMinutes(30)
                 });
             }
 
