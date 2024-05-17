@@ -12,7 +12,7 @@ var host = new HostBuilder()
     {
         services.AddApplicationInsightsTelemetryWorkerService();
         services.ConfigureFunctionsApplicationInsights();
-        services.AddDbContext<DataContext>(x => x.UseSqlServer(Environment.GetEnvironmentVariable("VerificationRequestDatabase")));
+        services.AddDbContext<DataContext>(x => x.UseSqlServer(Environment.GetEnvironmentVariable("SQLDATABASE")));
         services.AddScoped<IVerificationCleanerService, VerificationCleanerService>();
         services.AddScoped<IVerificationService, VerificationService>();
         services.AddScoped<IValidateVerificationCodeService, ValidateVerificationCodeService>();
