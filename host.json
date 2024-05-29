@@ -8,14 +8,5 @@
       },
       "enableLiveMetricsFilters": true
     }
-  },
-  "extensions": {
-    "http": {
-      "cors": {
-        "allowedOrigins": [
-          "*"
-        ]
-      }
-    }
   }
 }
